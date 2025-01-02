@@ -15,7 +15,7 @@ bool checkOverlap(int r, int xC, int yC, int x1, int y1, int x2, int y2) {
 
     }
 
- ##3. Russian doll envelopes
+ ## 3. Russian doll envelopes
  
  class Solution {
 public:
