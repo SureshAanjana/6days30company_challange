@@ -14,6 +14,23 @@ bool checkOverlap(int r, int xC, int yC, int x1, int y1, int x2, int y2) {
         return false;
 
     }
+ ## 2. who is winner
+
+ class Solution {
+public:
+    int findTheWinner(int n, int k) {
+       vector<int>circle;
+       for(int i=1;i<=n;i++) circle.push_back(i);
+
+       int cur_ind=0;
+       while(circle.size()>1){
+        int next_to_remove=(cur_ind+k-1)%circle.size();
+        circle.erase(circle.begin()+next_to_remove);
+        cur_ind=next_to_remove;
+       } 
+       return circle[0];
+    }
+};
 
  ## 3. Russian doll envelopes
  
